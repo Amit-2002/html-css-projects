@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+} 
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+   
+}
+body {
+    background-color: #ccc;
+}
+
+.apply_box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+
+/* .apply_box, h3 {
+    display: flex;
+    align-items: flex-end;
+    margin-left:10px;
+    
+} */
+
+.apply_box h1 {
+    display: inline;
+}
+
+.apply_box p {
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form_container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+    gap: 20px;
+}
+
+.form_controler {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 6px 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 2px solid #ccc;    
+    outline-color: blue;
+}
+
+.button_container {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+button {
+    font-size:large;
+    background-color: red;
+    border: transparent solid 2px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+button:hover {
+    background-color: #ccc;
+    color: black;
+    border: red solid 2px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.add {
+    grid-column: 1 /span 2;
+}
+
+.add taxtarea {
+    width: 100%;
+}
+
+/* @media (max-width: 460ps) {
+    .form_container {
+        grid-column: 1 /span 2;
+    }
+}
+
+@media (max-width: 460) {
+    .add {
+        grid-column: 1 /span 2;
+    }
+
+} */
+
+
+
+
+
+
+
+ 

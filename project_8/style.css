@@ -1,0 +1,274 @@
+:root {
+    --lighting-color: #0089b7;
+    --darker-color: #003d62;
+    --dark-color: #003251;
+    --secondry-color: #fff700;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: white;
+    line-height: 1.4;
+    font-weight: 300;
+    scroll-behavior: smooth;   
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: var(--lighting-color);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav li {
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+nav li:hover {
+    border-bottom: 3px  solid var(--secondry-color);
+    transition: 0.3s ease-in-out;
+}
+
+.hero {
+    background: var(--dark-color);
+    padding-top: 40px;
+    border-bottom: 5px solid var(--lighting-color);
+}
+
+.hero_image img {
+    border-radius: 44%;
+    height: 600px;
+    width: 419px;
+    padding: 20px;
+
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hi-text {
+    font-size: 60px;
+    color: var(--secondry-color);
+}
+
+.name-taxt {
+    font-size: 50px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-weight: bold;
+
+    /*just to add animation */
+    overflow: hidden;
+    border-right: 5px solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40,end), blink-caret 0.75s step-end infinite;
+}
+
+/* animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* animation */
+@keyframes blink-caret {
+    from,
+    to  {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+} 
+
+
+
+#projects {
+    background: var(--darker-color);
+    
+}
+
+#projects h1 {
+    font-size: 60px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    place-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 320px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05s);
+    transition: 1s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.05s);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.card-content {
+    padding: 20px;
+    position: relative;
+    margin-top: -65px;
+    /* margin-bottom: -65px; */
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+
+.card-content h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card:hover .card-content {
+    background: white;
+    color: var(--dark-color);
+    transform: translateY(0px);
+    transition: 0.5s ease-in-out;
+}
+
+#contect {
+    background: var(--dark-color);
+    min-height: 500px;
+}
+
+#contect h2 {
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#contect .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+
+.top-contect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    margin: 0 auto;
+    max-width: 800px;
+    gap: 20px;
+}
+
+.contect-way {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contect-way i {
+    font-size: 30px;
+}
+
+.contect-way h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bottam-contect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    margin: 0 auto;
+    max-width: 400px;
+    gap: 15px;
+}
+
+footer {
+    background: var(--darker-color);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

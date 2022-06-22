@@ -1,0 +1,236 @@
+/* making some variables for color_codes */
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+     --body: #f9f6ff;
+     --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--purple300) ;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-ou;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+.hero-section {
+    background-image: url(./images/hero_image.png);
+    color: white;
+    text-align: center;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-section h1 {
+    font-size: 96px;
+}
+
+.hero-section h3 {
+    font-size: 32px;
+}
+
+.music_section {
+    background-color: var(--purple500);
+    padding-top: 50px;
+}
+
+.music_section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.iphone_img {
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+
+button {
+    padding: 10px 15px;
+    transition: 0.2s ease-in-out;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.primery_btn {
+    background-color: var(--red600);
+    color: white;
+}
+
+.about_music {
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center;    
+    margin-bottom: 50px;
+}
+
+.secondry_btn {
+    background-color: var(--purple300);
+    color: white;
+}
+
+.video {
+    background-image: url(./images/video.png);
+    min-height: 800px;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;    
+}
+
+.video .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+
+.hero-section .video {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gift {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.gift_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upper_footer {
+    background-color: var(--purple600);
+    padding: 20px;
+}
+
+
+
+.footer_links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+   
+}
+
+.upper_footer .container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.upper_footer h3{
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+    margin-bottom: 10px; 
+}
+
+.lower_footer {
+    background-color: var(--purple300);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin: 50px;
+}
+
+
+
+
+
+
+
+
+
+
