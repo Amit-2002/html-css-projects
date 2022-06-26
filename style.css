@@ -71,14 +71,16 @@ nav li:hover {
 .hero {
     background: var(--dark-color);
     padding-top: 40px;
+    padding-bottom: 10px;
     border-bottom: 5px solid var(--lighting-color);
 }
 
 .hero_image img {
-    border-radius: 44%;
+    border-radius: 47%;
     height: 600px;
-    width: 419px;
-    padding: 20px;
+    width: 432px;
+    padding: 8px;
+    border: 10px #cff solid;
 
 }
 
